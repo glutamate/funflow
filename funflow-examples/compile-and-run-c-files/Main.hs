@@ -16,7 +16,7 @@ import Path.IO
 main :: IO ()
 main = do
     cwd <- getCurrentDir
-    r <- withSimpleLocalRunner (cwd </> [reldir|funflow-example/store|]) $ \run ->
+    r <- withSimpleLocalRunner (cwd </> [reldir|funflow-examples/store|]) $ \run ->
       run mainFlow 3
     case r of
       Left err ->
