@@ -1,7 +1,9 @@
 let
-  iohk-overlay = import ./haskell.nix-src.nix;
+  haskellNix = import ./haskell.nix-src.nix {};
+  nixpkgsSrc = haskellNix.sources.nixpkgs-2003;
+  nixpkgsArgs = haskellNix.nixpkgsArgs;
 in
-{ pkgs ? import ./nixpkgs-src.nix iohk-overlay
+{ pkgs ? import nixpkgsSrc nixpkgsArgs
 }:
   pkgs.haskell-nix.stackProject {
     src = pkgs.haskell-nix.haskellLib.cleanGit { src = ./..; };

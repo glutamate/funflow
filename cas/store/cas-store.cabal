@@ -1,5 +1,5 @@
 Name:                cas-store
-Version:             1.0.1
+Version:             1.1.0
 Synopsis:            A content-addressed storage
 Description:
             A content-addressed storage supporting a remote caching. The API mainly consists of the cacheKleisliIO function which takes a (a -> m b) function

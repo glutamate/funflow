@@ -1,4 +1,4 @@
-resolver: lts-14.27
+resolver: lts-15.14
 
 packages:
 - cas/hashable
@@ -12,8 +12,12 @@ packages:
 - funflow-cwl
 
 extra-deps:
-- aws-0.20
-- hedis-0.12.5@sha256:5e3f47b935a48e57c44197f715a26d88a33c46c045a8c19d75b0d7ebc4ae3cbe
+- aws-0.22
+- sqlite-simple-0.4.18.0
+- store-0.7.4
+- direct-sqlite-2.3.26
+- store-core-0.4.4.2
+- th-utilities-0.2.4.0
 
 nix:
   packages:

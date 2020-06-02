@@ -149,11 +149,9 @@ import           Data.Foldable                       (asum)
 import qualified Data.Hashable
 import           Data.List                           (foldl', stripPrefix)
 import           Data.Maybe                          (fromMaybe, listToMaybe)
-import           Data.Monoid                         ((<>))
 import qualified Data.Store
 import           Data.String                         (IsString (..))
 import qualified Data.Text                           as T
-import           Data.Typeable                       (Typeable)
 import           Data.Void
 import qualified Database.SQLite.Simple              as SQL
 import qualified Database.SQLite.Simple.FromField    as SQL
